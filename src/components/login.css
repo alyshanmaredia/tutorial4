@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    background: #ececec;
+}
+
+.box-area{
+    width: 600px;
+}
+
+.rounded-4{
+    border-radius: 30px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.row-border {
+    border: 1px solid #e0e0e0;
+    height: 540px;
+}
+
+.btn{
+    background-color: #712CF9 !important;
+    border: #712CF9 !important;
+}
+
+.btn:hover{
+    background-color: #712CF9 !important;
+    border: #712CF9 !important;
+}
+
+.w-100{
+    margin-top: 60px;
+}
