@@ -7,10 +7,10 @@ import User from './components/User';
 
 function App() {
     const AppRoute = createBrowserRouter([
-    {
-        path:"/",
+        {
+            path:"/",
             element: <Login/>
-    },
+        },
         {
             path:"/profile",
             element: <UserProfiles/>
@@ -19,7 +19,6 @@ function App() {
             path:"/profile/:id",
             element: <User/>
         }
-
     ])
   return (
     <>

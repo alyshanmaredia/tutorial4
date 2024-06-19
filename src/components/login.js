@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
+    const navigate = useNavigate()
     const [emailAddress, setEmailAddress] = useState("");
     const [password, setPassword] = useState("");
     const [emailValid, setEmailValid] = useState("true");
@@ -31,7 +33,8 @@ export default function Login() {
                     toast.success("You have Successfully logged in!", {
                         position: "bottom-right"
                     });
-                   // history.push('/profile-listing');
+                    
+                    navigate("/profile");
                 }
             } catch (error) {
                 toast.error("Invalid email or password!", {
