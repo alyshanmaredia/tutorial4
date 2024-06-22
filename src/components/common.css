@@ -40,3 +40,11 @@ html, body {
 .w-100{
     margin-top: 60px;
 }
+
+.filterText{
+    width: 100%;
+}
+
+.userContainer{
+    width: 100%;
+}

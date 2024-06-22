@@ -1,5 +1,5 @@
 import { Form, Container, Row, Col, Button } from "react-bootstrap";
-import "./login.css";
+import "./common.css";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -33,9 +33,12 @@ export default function Login() {
                     toast.success("You have Successfully logged in!", {
                         position: "bottom-right"
                     });
-                    
-                    navigate("/profile");
+
+                    setTimeout(() => {
+                        navigate("/profile");
+                    }, 800);
                 }
+
             } catch (error) {
                 toast.error("Invalid email or password!", {
                     position: "bottom-right"
