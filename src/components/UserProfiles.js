@@ -51,7 +51,7 @@ const UserProfiles = () => {
                 {filteredUsers.map(user => (
                     <Col md={4} sm={6} key={user._id}>
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={user.picture} alt={user.name} />
+                            <Card.Img variant="top" src={user.picture}/>
                             <Card.Body>
                                 <Card.Title>{user.name}</Card.Title>
                                 <Link to={`/profile/${user._id}`} className="btn btn-primary">View Profile</Link>

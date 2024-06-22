@@ -31,7 +31,7 @@ const ProfileDetail = () => {
     };
 
     return (
-        <Container className='d-flex flex-column align-items-center justify-content-center min-vh-100 userContainer'>
+        <Container className='d-flex flex-column justify-content-center min-vh-100 align-items-center'>
             <div className="p-5 border rounded" style={{ width: '80%', maxWidth: '800px'}}>
                 <Row className='mb-4'>
                     <Col>
